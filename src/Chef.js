@@ -1,6 +1,21 @@
 class Chef {
-  constructor() {
-    
+  constructor(name, restaurant) {
+    this.name = name;
+    this.restaurant = restaurant
+  }
+  greetCustomer(peep, morning) {
+    if (morning === true) {
+      return `Good morning, ${peep}!`
+    } else {
+      return `Hello, ${peep}!`
+    }
+  }
+  checkForFood(foodItem) {
+    if (foodItem.name === "Cinnamon Rolls") {
+      return `Yes, we're serving ${foodItem.name} today!`
+    } else {
+      return `Sorry, we aren't serving ${foodItem.name} today.`
+    }
   }
 }
 
