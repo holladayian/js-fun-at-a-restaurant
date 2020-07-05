@@ -16,7 +16,7 @@ describe("restaurant.js", function() {
     it("should have a name", function () {
       var pizzaRestaurant = createRestaurant("Sexy Pizza");
       assert.equal(pizzaRestaurant.name, "Sexy Pizza");
-    });
+    }); 
 
     it("should be able to have a different name", function () {
       var arepaRestaurant = createRestaurant("Quiero Arepas");

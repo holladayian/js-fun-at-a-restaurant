@@ -11,11 +11,11 @@ class Chef {
     }
   }
   checkForFood(foodItem) {
-    if (foodItem.name === "Cinnamon Rolls") {
-      return `Yes, we're serving ${foodItem.name} today!`
+    if (this.restaurant.menus[foodItem.type].includes(foodItem)) {
+      return `Yes, we're serving ${foodItem.name} today!`;
     } else {
       return `Sorry, we aren't serving ${foodItem.name} today.`
-    }
+   }
   }
 }
 

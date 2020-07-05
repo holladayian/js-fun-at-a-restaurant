@@ -11,18 +11,7 @@ function createMenuItem(name, price, type) {
 }
 
 function addIngredients(ingredient, ingredientArray) {
-  var isIn = false;
-  if (ingredientArray.length > 0) {
-    for (var i = 0; i < ingredientArray.length; i++) {
-      if (ingredientArray[i] === ingredient) {
-        isIn = true;
-        break;
-      }
-    }
-    if (!isIn) {
-      ingredientArray.push(ingredient)
-    }
-  } else {
+  if (!ingredientArray.includes(ingredient)) {
     ingredientArray.push(ingredient)
   }
 }
